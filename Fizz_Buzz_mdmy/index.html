@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fizz Buzz homework</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Anton'rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body bgcolor="lightgreen">
+<h1 class="title" onclick="this.innerHTML='Have Fun!'">FIZZBUZZ GAME!</h1>
+<h2 class="text">Count all FizzBuzzes scrolling!</h2>
+
+<main>
+<div>
+<div class="form">
+    <label for="start">Start
+    <input type="range" min="0" max="100" oninput="updateRangeInput(this)" value="0">
+    <input name="start" id="startVal" type="text" placeholder="1">
+    </label>
+    <label for="end">End
+    <input type="range" min="0" max="100" oninput="updateRangeInput(this)" value="0">
+    <input name="end" id="endVal" type="text" placeholder="100">
+    </label>
+    <label for="fizz">Fizz
+    <input type="range" min="3" max="100" oninput="updateRangeInput(this)" value="0">
+    <input name="fizz" id="fizzVal" type="text" placeholder="3" >
+    </label> 
+    <label for="buzz">Buzz
+    <input type="range" min="5" max="100" oninput="updateRangeInput(this)" value="0">
+    <input name="buzz" id="buzzVal" type="text" placeholder="5">
+    </label>
+    <button id="button1" class="buttons" value="Submit">Submit All Arguments</button>
+    <button id="button2" class="buttons" value="Reset">Clear Content</button>
+</div>
+
+</div>
+
+<div class="container">                        
+<div id="myFizz">
+        <div id="mytext">FizzBuzz</div>
+        <div id="mytext2">Fizz</div>
+        <div id="mytext3">Buzz</div> 
+        <div id="mytext4"></div>     
+        </div>
+
+</main>
+
+</body>
+
+</html>
